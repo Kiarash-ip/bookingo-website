@@ -48,14 +48,15 @@
 
       a:last-child {
         background-color: $primary-color;
-        height: 4.1rem;
-        padding: 0 10px;
-        line-height: 4.1rem;
+        width: 15.36rem;
+        height: 4.6rem;
+        line-height: 4.6rem;
+        text-align: center;
         border-radius: 3px;
         text-transform: uppercase;
         color: #fff;
         margin: 0 1rem;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         transition: background-color 0.2s;
 
         &:hover {
