@@ -1,0 +1,85 @@
+.intro-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0;
+}
+
+.intro-section-container {
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.intro-section-content-container {
+  padding: 2rem 4rem;
+
+  .intro-section-content {
+    display: flex;
+    padding: 2rem;
+    column-gap: 4rem;
+    flex-direction: column;
+    // background-color: green;
+
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    p {
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: $dark-color;
+    }
+
+    .intro-section-buttons-container {
+      margin-top: 5rem;
+      a {
+        font-size: 2rem;
+        display: inline-block;
+        padding: 1.5rem 1.6rem;
+        display: inline-block;
+        margin-right: 3rem;
+        cursor: pointer;
+      }
+
+      a:first-child {
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 3px;
+        border: 2px solid $primary-color;
+        transition: background-color 0.2s, border-color 0.2s;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+          border-color: darken($primary-color, 10%);
+        }
+      }
+
+      a:last-child {
+        border: 2px solid $primary-color;
+        color: $primary-color;
+        border-radius: 3px;
+
+        transition: border-color 0.2s, color 0.2s;
+
+        &:hover {
+          border-color: darken($primary-color, 10%);
+          color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+.content-section {
+  width: 50%;
+}
+
+.intro-section-visual-part {
+  width: 50%;
+}
+
+.intro-section-image {
+  height: 300px;
+}
