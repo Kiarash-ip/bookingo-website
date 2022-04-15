@@ -65,7 +65,7 @@ html {
   text-transform: uppercase;
   color: #fff;
   margin: 0 1rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   transition: background-color 0.2s;
 }
 .navbar__container .buttons__container a:last-child:hover {
@@ -285,7 +285,7 @@ html {
 .section-share-work .share-work-container .share-work-image-container {
   width: 60%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .section-share-work .share-work-container .share-work-image-container img {
   width: 500px;
@@ -340,7 +340,7 @@ html {
 .section-present .present-container .present-image-container {
   width: 60%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .section-present .present-container .present-image-container img {
   width: 500px;
@@ -395,7 +395,7 @@ html {
 .section-share-right .share-right-container .share-right-image-container {
   width: 60%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .section-share-right .share-right-container .share-right-image-container img {
   width: 500px;
