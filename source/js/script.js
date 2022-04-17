@@ -85,3 +85,4 @@ prevBtn.addEventListener("click", () => {
 setInterval(() => {
   nextSlide();
 }, 7000);
+

@@ -621,7 +621,6 @@ html {
 }
 .footer .footer__container .footer__content-part .footer__input {
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
   width: 100%;
   margin-top: 2rem;
