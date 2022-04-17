@@ -5,11 +5,21 @@ const nextBtn = $.querySelector(".next-btn");
 const prevBtn = $.querySelector(".prev-btn");
 const controllers = $.querySelectorAll(".controller");
 
+let scrollArr = [];
 window.addEventListener("scroll", (e) => {
-  if ($.documentElement.scrollTop > 85) {
+  scrollArr.push($.documentElement.scrollTop);
+  if ($.documentElement.scrollTop < scrollArr[0]) {
     navbarElem.classList.add("active");
   } else {
     navbarElem.classList.remove("active");
+  }
+
+  if ($.documentElement.scrollTop === 0) {
+    navbarElem.classList.add("active");
+  }
+
+  if (scrollArr.length > 2) {
+    scrollArr = scrollArr.slice(-2);
   }
 });
 

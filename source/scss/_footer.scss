@@ -107,7 +107,8 @@
           padding: 1.2rem 1.6rem;
           font-size: 1.4rem;
           background-color: $primary-color;
-          font-weight: bold;
+          border: 1px solid $primary-color;
+          // font-weight: bold;
           color: #fff;
           text-transform: uppercase;
           border-top-right-radius: 3px;

@@ -9,10 +9,12 @@
   font-size: 1.5rem;
   z-index: 10;
   border-bottom: 1px solid #fff;
-  transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s, transform 0.3s;
+  transform: translateY(-100%);
 
   &.active {
     border-bottom: 1px solid $white-color-light;
+    transform: translateY(0);
   }
 
   &__container {
