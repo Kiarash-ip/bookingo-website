@@ -8,14 +8,16 @@
     max-width: 1240px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .share-work-image-container {
-      width: 60%;
-      display: flex;
-      justify-content: center;
+      width: 650px;
+      // display: flex;
+      // justify-content: center;
 
       img {
-        width: 500px;
+        width: 100%;
+        padding: 4rem 6rem;
       }
     }
 

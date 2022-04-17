@@ -2,12 +2,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 5rem 0;
 
   .slider-wrapper {
     position: relative;
-    max-width: 1240px;
-    height: 504px;
+    max-width: 1120px;
+    height: 500px;
     background-color: #f1fbff;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,8 +35,12 @@
 
     .next-btn,
     .prev-btn {
-      border: 1px solid rgba(61, 61, 195, 0.2);
-      padding: 1rem;
+      border: 2px solid rgba(61, 61, 195, 0.2);
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      // padding: 1rem;
+      text-align: center;
       border-radius: 50%;
       font-size: 1.7rem;
       color: #151582;
@@ -53,8 +59,9 @@
 
     .slides {
       position: relative;
-      top: 40%;
+      // top: 40%;
       width: 100%;
+      height: 260px;
       overflow: hidden;
     }
 
@@ -64,7 +71,7 @@
       transition: 0.4s ease-in-out;
 
       & > p {
-        font-size: 2rem;
+        font-size: 3.2rem;
       }
 
       cite {
@@ -108,7 +115,7 @@
 
     .navigator-container {
       position: absolute;
-      bottom: 15%;
+      bottom: 10%;
       display: flex;
       .controller {
         width: 30px;
