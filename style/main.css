@@ -114,10 +114,12 @@ html {
   align-items: center;
   justify-content: space-between;
   margin-top: 6rem;
+  padding: 0 2.4rem;
 }
 
 .intro-section-visual-part {
   width: 640px;
+  padding: 0 1.2rem;
 }
 .intro-section-visual-part img {
   width: 100%;
@@ -125,7 +127,7 @@ html {
 
 .intro-section-content {
   display: flex;
-  padding: 4rem 3rem;
+  padding: 0 1.2rem;
   row-gap: 2rem;
   flex-direction: column;
   width: 600px;
@@ -243,7 +245,7 @@ html {
 }
 .site-section .site-section-container .site-section-content {
   width: 40%;
-  padding: 4rem 6rem;
+  padding: 0 1.2rem;
 }
 @media only screen and (max-width: 1280px) {
   .site-section .site-section-container .site-section-content {
@@ -306,6 +308,7 @@ html {
           clip-path: circle(47.6% at 51% 100%);
   transform: translateY(-20%);
   overflow: hidden;
+  padding: 0 1.2rem;
 }
 @media only screen and (max-width: 1115px) {
   .site-section .site-section-container .site-section-image-container {
@@ -329,7 +332,6 @@ html {
 }
 .site-section .site-section-container .site-section-image-container img {
   width: 70%;
-  padding: 2rem 3rem;
   transform: translateY(30%);
 }
 

@@ -11,20 +11,21 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 6rem;
+  padding: 0 2.4rem;
 }
 
 .intro-section-visual-part {
   width: 640px;
+  padding: 0 1.2rem;
 
   img {
     width: 100%;
-    // padding: 4rem 6rem;
   }
 }
 
 .intro-section-content {
   display: flex;
-  padding: 4rem 3rem;
+  padding: 0 1.2rem;
   row-gap: 2rem;
   flex-direction: column;
   width: 600px;
