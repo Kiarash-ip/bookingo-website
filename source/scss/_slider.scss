@@ -36,6 +36,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 0 0 3rem 0;
     }
 
     .next-btn,
@@ -78,6 +79,14 @@
 
       & > p {
         font-size: 3.2rem;
+
+        @media only screen and (max-width: 620px) {
+          font-size: 2.8rem;
+        }
+
+        @media only screen and (max-width: 501px) {
+          font-size: 2.6rem;
+        }
       }
 
       cite {
@@ -120,8 +129,8 @@
     }
 
     .navigator-container {
-      position: absolute;
-      bottom: 10%;
+      // position: absolute;
+      // bottom: 10%;
       display: flex;
       .controller {
         width: 3.2rem;

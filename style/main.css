@@ -764,6 +764,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 0 3rem 0;
 }
 .section-slider-container .slider-wrapper .next-btn,
 .section-slider-container .slider-wrapper .prev-btn {
@@ -804,6 +805,16 @@ html {
 .section-slider-container .slider-wrapper .slide > p {
   font-size: 3.2rem;
 }
+@media only screen and (max-width: 620px) {
+  .section-slider-container .slider-wrapper .slide > p {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 501px) {
+  .section-slider-container .slider-wrapper .slide > p {
+    font-size: 2.6rem;
+  }
+}
 .section-slider-container .slider-wrapper .slide cite {
   display: flex;
   justify-content: center;
@@ -837,8 +848,6 @@ html {
   text-align: center;
 }
 .section-slider-container .slider-wrapper .navigator-container {
-  position: absolute;
-  bottom: 10%;
   display: flex;
 }
 .section-slider-container .slider-wrapper .navigator-container .controller {
