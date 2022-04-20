@@ -57,6 +57,7 @@ function nextSlide() {
     }
     slide++;
   });
+  console.log(currentSlide);
 }
 
 function prevSlide() {
@@ -73,6 +74,7 @@ function prevSlide() {
     }
     slide++;
   });
+  console.log(currentSlide);
 }
 
 nextBtn.addEventListener("click", () => {
@@ -87,6 +89,21 @@ prevBtn.addEventListener("click", () => {
 // }, 7000);
 controllers.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    console.log(e.target.dataset.id);
+    let id = null;
+    if (e.target.classList.contains("controller-btn")) {
+      id = +e.target.parentElement.dataset.id;
+    } else {
+      id = +e.target.dataset.id;
+    }
+
+    if (currentSlide > id) {
+      while (currentSlide !== id) {
+        nextSlide();
+      }
+    } else if (currentSlide < id) {
+      while (currentSlide !== id) {
+        prevSlide();
+      }
+    }
   });
 });
