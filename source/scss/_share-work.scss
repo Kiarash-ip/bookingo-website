@@ -9,43 +9,68 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 2.4rem;
+
+    @media only screen and (max-width: 768px) {
+      padding: 0 1.6rem;
+    }
 
     .share-work-image-container {
-      width: 650px;
-      // display: flex;
-      // justify-content: center;
+      width: 596px;
+      padding: 0 2.4rem 0 1.2rem;
+
+      @media only screen and (max-width: 960px) {
+        width: 780px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        padding: 0 1.2rem;
+        width: 100%;
+      }
 
       img {
         width: 100%;
-        padding: 4rem 6rem;
       }
     }
 
     .share-work-content {
-      width: 40%;
-      padding: 1rem 6rem;
+      width: 35%;
       justify-self: stretch;
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: space-between;
+      padding: 0 1.2rem;
+
+      @media only screen and (max-width: 1280px) {
+        width: 40%;
+      }
+
+      @media only screen and (max-width: 960px) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
 
       h5 {
-        font-size: 3rem;
+        font-size: 3.2rem;
       }
 
       p {
         font-size: 1.5rem;
         color: $dark-color;
-        margin-top: 2rem;
-        line-height: 2rem;
+        margin-top: 1.6rem;
+        line-height: 3rem;
+
+        @media only screen and (max-width: 768px) {
+          line-height: 2.5rem;
+        }
       }
 
       .share-work-link-container {
-        margin-top: 4rem;
+        margin-top: 3.2rem;
         display: flex;
         align-items: center;
         color: #0085e4;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         a {
           all: unset;
           cursor: pointer;
@@ -65,5 +90,34 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .share-work-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .share-work-image-container {
+    margin-left: -40%;
+    width: 780px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .share-work-container {
+    flex-direction: column;
+  }
+
+  .share-work-content {
+    width: 100%;
+  }
+
+  .share-work-image-container {
+    width: 100%;
+    margin: 3rem 0 0;
+    order: 2;
   }
 }

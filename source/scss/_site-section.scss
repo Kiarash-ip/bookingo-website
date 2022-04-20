@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 2.4rem;
 
     .site-section-content {
       width: 40%;
@@ -126,6 +127,7 @@
 @media only screen and (max-width: 768px) {
   .site-section-container {
     flex-direction: column;
+    padding: 0 1.6rem;
   }
 
   .site-section-image-container {

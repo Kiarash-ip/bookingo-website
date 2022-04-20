@@ -82,7 +82,11 @@ prevBtn.addEventListener("click", () => {
   prevSlide();
 });
 
-setInterval(() => {
-  nextSlide();
-}, 7000);
-
+// setInterval(() => {
+//   nextSlide();
+// }, 7000);
+controllers.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    console.log(e.target.dataset.id);
+  });
+});
