@@ -14,19 +14,36 @@
       width: 40%;
       padding: 4rem 6rem;
 
+      @media only screen and (max-width: 1280px) {
+        padding: 2rem 0 2rem 2rem;
+      }
+
+      @media only screen and (max-width: 960px) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0 1.2rem;
+      }
+
       h5 {
         font-size: 3rem;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 3.2rem;
+        }
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         color: $dark-color;
-        margin-top: 2rem;
-        line-height: 2rem;
+        margin-top: 1.6rem;
+        line-height: 3rem;
       }
 
       .site-section-link-container {
-        margin-top: 4rem;
+        margin-top: 2.4rem;
         display: flex;
         align-items: center;
         color: #0085e4;
@@ -50,13 +67,6 @@
         }
       }
     }
-
-    // .site-section-image {
-    //   width: 60%;
-    //   margin-left: auto;
-    //   //   display: flex;
-    //   //   justify-content: center;
-
     .site-section-image-container {
       width: 700px;
       display: flex;
@@ -67,12 +77,64 @@
       transform: translateY(-20%);
       overflow: hidden;
 
-      img {
+      @media only screen and (max-width: 1115px) {
         width: 60%;
-        padding: 4rem 6rem;
-        transform: translateY(25%);
+      }
+
+      @media only screen and (max-width: 960px) {
+        width: 700px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        transform: translateY(-40%);
+      }
+
+      @media only screen and (max-width: 690px) {
+        width: 100%;
+      }
+
+      img {
+        width: 70%;
+        padding: 2rem 3rem;
+        transform: translateY(30%);
       }
     }
-    // }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .site-section-content {
+    padding: 2rem 0 2rem 2rem;
+  }
+
+  .site-section-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .site-section-image-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .site-section-image-container {
+    margin-right: -35%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .site-section-container {
+    flex-direction: column;
+  }
+
+  .site-section-image-container {
+    margin: 0;
+  }
+
+  .site-section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
