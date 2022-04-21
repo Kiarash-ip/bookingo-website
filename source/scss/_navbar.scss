@@ -17,49 +17,96 @@
     transform: translateY(0);
   }
 
+  .open-menu-btn {
+    display: none;
+
+    @media only screen and (max-width: 960px) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-right: 2%;
+      border: none;
+      transform: translateY(-50%);
+      background-color: #edf3fa;
+      padding: 11px;
+      height: 43px;
+      font-size: 1.6rem;
+      border-radius: 5px;
+      cursor: pointer;
+
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+
   &__container {
     display: flex;
     padding: 1.5rem 0;
-    justify-content: center;
-    width: 1288px;
+    justify-content: space-between;
+    width: 1240px;
     align-items: center;
+
+    .logo__container {
+      padding: 8px 0 8px 16px;
+    }
 
     .navbar__list-btns-container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-left: 4rem;
+      padding-left: 30px;
     }
 
     .buttons__container {
-      margin-left: 10rem;
-      a {
-        all: unset;
-        display: inline-block;
-        cursor: pointer;
-      }
+      display: flex;
+      align-items: center;
+      margin-left: 3rem;
 
-      a:first-child {
-        padding: 0 2rem;
-        transition: color 0.2s;
+      .signIn-btn {
+        a {
+          display: inline-block;
+          padding: 8px 16px 8px 0;
+          text-decoration: none;
+          color: $dark-color;
+          transition: color 0.2s;
+          font-size: 1.6rem;
+        }
 
-        &:hover {
+        @media only screen and (max-width: 960px) {
+          width: 100%;
+          font-size: 1.4rem;
+        }
+
+        &:hover a {
           color: darken($primary-color, 5%);
         }
       }
 
-      a:last-child {
+      .startFree-btn {
         background-color: $primary-color;
-        width: 15.36rem;
-        height: 4.6rem;
-        line-height: 4.6rem;
         text-align: center;
         border-radius: 3px;
         text-transform: uppercase;
-        color: #fff;
         margin: 0 1rem;
         font-size: 1.4rem;
         transition: background-color 0.2s;
+
+        @media only screen and (max-width: 960px) {
+          width: 100%;
+          margin: 0;
+          border-radius: 4px;
+        }
+        a {
+          display: inline-block;
+          padding: 16px 12.8px;
+          text-decoration: none;
+          color: #fff;
+          @media only screen and (max-width: 960px) {
+            padding: 20px;
+          }
+        }
 
         &:hover {
           background-color: darken($primary-color, 5%);
@@ -71,9 +118,16 @@
   &__list {
     display: flex;
     list-style: none;
+
+    &-item:first-child {
+      padding: 8px 16px 8px 0;
+    }
+
     &-item {
-      padding: 2rem 2.5rem;
+      font-size: 1.6rem;
+      padding: 8px 16px;
       text-decoration: none;
+      cursor: pointer;
     }
   }
 }
@@ -85,5 +139,97 @@
 
   100% {
     transform: translateY(100%);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .navbar__container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .navbar__list-btns-container {
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 0;
+    padding: 0;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid $white-color-light;
+    transition: 0.5s ease;
+    &.open {
+      height: 100vh;
+      padding-bottom: 50px;
+      padding-top: 40px;
+      // visibility: visible;
+
+      // visibility: visible;
+      // animation: menuOpen 0.3s ease alternate;
+    }
+
+    .buttons__container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 95%;
+      margin: 0;
+      margin-top: 2.4rem;
+
+      .signIn-btn {
+        border: 1px solid $primary-color;
+        border-radius: 4px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2rem;
+        transition: 0.2s;
+
+        &:hover {
+          border-color: darken($primary-color, 10%);
+        }
+
+        a {
+          padding: 20px;
+          color: $primary-color;
+          text-transform: uppercase;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .navbar__list {
+    flex-direction: column;
+
+    &-item {
+      font-size: 2.4rem;
+      padding: 8px 16px;
+      margin-bottom: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+@keyframes menuOpen {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes menuClose {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
   }
 }

@@ -4,6 +4,9 @@ const slides = $.querySelectorAll(".slide");
 const nextBtn = $.querySelector(".next-btn");
 const prevBtn = $.querySelector(".prev-btn");
 const controllers = $.querySelectorAll(".controller");
+const menu = $.querySelector(".navbar__list-btns-container");
+const hamburgerMenuBtn = $.querySelector(".open-menu-btn");
+const menuIcon = $.querySelector(".menu-icon");
 
 let scrollArr = [];
 window.addEventListener("scroll", (e) => {
@@ -106,4 +109,19 @@ controllers.forEach((btn) => {
       }
     }
   });
+});
+
+let open = false;
+
+hamburgerMenuBtn.addEventListener("click", () => {
+  // hamburgerMenuBtn.textContent = "Close";
+  if (open) {
+    hamburgerMenuBtn.innerHTML = `<i class="fa-solid fa-bars"></i> Menu`;
+    menu.classList.remove("open");
+    open = false;
+  } else {
+    hamburgerMenuBtn.textContent = "Close";
+    menu.classList.add("open");
+    open = true;
+  }
 });
