@@ -67,7 +67,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 30px;
 }
 .navbar__container .buttons__container {
   display: flex;
@@ -125,9 +124,6 @@ html {
   display: flex;
   list-style: none;
 }
-.navbar__list-item:first-child {
-  padding: 8px 16px 8px 0;
-}
 .navbar__list-item {
   font-size: 1.6rem;
   padding: 8px 16px;
@@ -169,13 +165,13 @@ html {
     background-color: #fff;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-top: 1px solid #ebebed;
     transition: 0.5s ease;
   }
   .navbar__list-btns-container.open {
-    height: 100vh;
-    padding-bottom: 50px;
-    padding-top: 40px;
+    height: 400px;
+    padding: 40px 0 50px 0;
   }
   .navbar__list-btns-container .buttons__container {
     flex-direction: column;

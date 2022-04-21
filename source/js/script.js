@@ -114,7 +114,6 @@ controllers.forEach((btn) => {
 let open = false;
 
 hamburgerMenuBtn.addEventListener("click", () => {
-  // hamburgerMenuBtn.textContent = "Close";
   if (open) {
     hamburgerMenuBtn.innerHTML = `<i class="fa-solid fa-bars"></i> Menu`;
     menu.classList.remove("open");
