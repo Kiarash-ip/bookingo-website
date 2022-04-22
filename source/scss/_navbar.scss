@@ -71,7 +71,7 @@
           text-decoration: none;
           color: $dark-color;
           transition: color 0.2s;
-          font-size: 1.6rem;
+          font-size: 1.8rem;
         }
 
         @media only screen and (max-width: 960px) {
@@ -90,7 +90,7 @@
         border-radius: 3px;
         text-transform: uppercase;
         margin: 0 1rem;
-        font-size: 1.4rem;
+
         transition: background-color 0.2s;
 
         @media only screen and (max-width: 960px) {
@@ -100,7 +100,8 @@
         }
         a {
           display: inline-block;
-          padding: 16px 12.8px;
+          font-size: 1.8rem;
+          padding: 14px 18px;
           text-decoration: none;
           color: #fff;
           @media only screen and (max-width: 960px) {
@@ -120,6 +121,7 @@
     list-style: none;
 
     &-item {
+      font-family: "vazir";
       font-size: 1.6rem;
       padding: 8px 16px;
       text-decoration: none;
@@ -151,16 +153,17 @@
     top: 100%;
     left: 0;
     right: 0;
-    height: 0;
+    max-height: 0;
     padding: 0;
     background-color: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-top: 1px solid $white-color-light;
+    border-bottom: 1px solid $white-color-light;
     transition: 0.5s ease;
     &.open {
-      height: 400px;
+      max-height: 500px;
       padding: 40px 0 50px 0;
     }
 
@@ -188,7 +191,6 @@
           padding: 20px;
           color: $primary-color;
           text-transform: uppercase;
-          font-size: 1.4rem;
         }
       }
     }
@@ -198,30 +200,11 @@
     flex-direction: column;
 
     &-item {
+      text-align: center;
       font-size: 2.4rem;
       padding: 8px 16px;
       margin-bottom: 8px;
       text-decoration: none;
-      font-weight: bold;
     }
-  }
-}
-
-@keyframes menuOpen {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes menuClose {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-100%);
   }
 }
