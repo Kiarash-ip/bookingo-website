@@ -6,10 +6,10 @@
   border-top: 1px solid #e4e4e5;
 
   .footer__container {
-    width: 1240px;
+    width: 1150px;
     padding: 0 3.2rem;
 
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 1150px) {
       width: 100%;
       padding: 0 2.4rem;
     }
@@ -17,7 +17,7 @@
     .footer__main-bar {
       display: flex;
 
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 1060px) {
         flex-direction: column;
       }
     }
@@ -26,7 +26,7 @@
       display: flex;
       width: 67%;
 
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 1060px) {
         width: 100%;
       }
 
@@ -67,7 +67,7 @@
       width: 33%;
       padding: 0 1.2rem;
 
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 1060px) {
         width: 100%;
         margin-top: 4rem;
       }
@@ -95,7 +95,7 @@
           align-items: flex-start;
         }
 
-        @media only screen and (max-width: 960px) {
+        @media only screen and (max-width: 1060px) {
           flex-direction: row;
           align-items: center;
         }
@@ -103,7 +103,7 @@
         .email-input-form {
           width: 100%;
 
-          @media only screen and (max-width: 960px) {
+          @media only screen and (max-width: 1060px) {
             width: 270px;
           }
         }
@@ -124,9 +124,10 @@
           @media only screen and (max-width: 1132px) {
             border-right: 1px solid #b1bbc9;
             width: 100%;
+            padding-right: 0;
           }
 
-          @media only screen and (max-width: 960px) {
+          @media only screen and (max-width: 1060px) {
             border-right: none;
           }
 
@@ -144,13 +145,12 @@
 
         button {
           all: unset;
-          padding: 1.2rem 1.6rem;
+          padding: 0 1.6rem;
           font-size: 1.4rem;
           background-color: $primary-color;
           border: 1px solid $primary-color;
-          // font-weight: bold;
+          height: 40px;
           color: #fff;
-          text-transform: uppercase;
           border-top-right-radius: 3px;
           border-bottom-right-radius: 3px;
           transition: background-color 0.2s;
@@ -167,11 +167,11 @@
       height: 60px;
       padding: 0 1.2rem;
 
-      @media only screen and (max-width: 1280px) {
+      @media only screen and (max-width: 1150px) {
         width: 100%;
       }
 
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 1060px) {
         display: flex;
         align-items: center;
       }
@@ -184,6 +184,7 @@
           display: flex;
           justify-content: flex-end;
           list-style: none;
+          padding-right: 3.2rem;
 
           a {
             text-decoration: none;
@@ -213,10 +214,10 @@
   border-top: 1px solid #e4e4e5;
 
   .container {
-    width: 1240px;
+    width: 1150px;
     padding: 3rem 3.2rem;
 
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 1150px) {
       width: 100%;
       padding: 3rem 2.4rem;
     }

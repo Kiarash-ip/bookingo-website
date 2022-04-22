@@ -5,7 +5,7 @@
   padding: 10rem 0;
 
   .share-work-container {
-    max-width: 1240px;
+    max-width: 1150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,7 +19,7 @@
       width: 596px;
       padding: 0 2.4rem 0 1.2rem;
 
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 1060px) {
         width: 780px;
       }
 
@@ -38,11 +38,11 @@
       justify-self: stretch;
       padding: 0 1.2rem;
 
-      @media only screen and (max-width: 1280px) {
+      @media only screen and (max-width: 1150px) {
         width: 40%;
       }
 
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 1060px) {
         width: 50%;
       }
 
@@ -93,13 +93,13 @@
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1150px) {
   .share-work-container {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1060px) {
   .share-work-image-container {
     margin-left: -40%;
     width: 780px;

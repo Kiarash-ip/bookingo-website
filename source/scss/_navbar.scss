@@ -20,7 +20,7 @@
   .open-menu-btn {
     display: none;
 
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1060px) {
       display: block;
       position: absolute;
       right: 0;
@@ -44,25 +44,26 @@
   &__container {
     display: flex;
     padding: 1.5rem 0;
-    justify-content: space-between;
-    width: 1240px;
+    // justify-content: space-between;
+    width: 1150px;
     align-items: center;
 
     .logo__container {
-      padding: 8px 0 8px 16px;
+      padding: 8px 16px;
     }
 
     .navbar__list-btns-container {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-left: auto;
       // padding-left: 30px;
     }
 
     .buttons__container {
       display: flex;
       align-items: center;
-      margin-left: 3rem;
+      margin-left: 4rem;
 
       .signIn-btn {
         a {
@@ -74,7 +75,7 @@
           font-size: 1.8rem;
         }
 
-        @media only screen and (max-width: 960px) {
+        @media only screen and (max-width: 1060px) {
           width: 100%;
           font-size: 1.4rem;
         }
@@ -87,13 +88,13 @@
       .startFree-btn {
         background-color: $primary-color;
         text-align: center;
-        border-radius: 3px;
+        border-radius: 10px;
         text-transform: uppercase;
         margin: 0 1rem;
 
         transition: background-color 0.2s;
 
-        @media only screen and (max-width: 960px) {
+        @media only screen and (max-width: 1060px) {
           width: 100%;
           margin: 0;
           border-radius: 4px;
@@ -104,7 +105,7 @@
           padding: 14px 18px;
           text-decoration: none;
           color: #fff;
-          @media only screen and (max-width: 960px) {
+          @media only screen and (max-width: 1060px) {
             padding: 20px;
           }
         }
@@ -119,6 +120,10 @@
   &__list {
     display: flex;
     list-style: none;
+
+    &-item:last-child {
+      padding-left: 0;
+    }
 
     &-item {
       font-family: "vazir";
@@ -140,13 +145,13 @@
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1150px) {
   .navbar__container {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1060px) {
   .navbar__list-btns-container {
     overflow: hidden;
     position: absolute;
@@ -198,6 +203,10 @@
 
   .navbar__list {
     flex-direction: column;
+
+    &-item:last-child {
+      padding-left: 16px;
+    }
 
     &-item {
       text-align: center;

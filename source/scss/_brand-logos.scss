@@ -7,10 +7,10 @@
   .brand-logos-container {
     display: flex;
     flex-direction: column;
-    max-width: 1240px;
+    width: 1150px;
     background-color: #f1fbff;
     margin: 0 12px;
-    padding: 8.4rem 6.4rem;
+    padding: 8.4rem 0;
     border-radius: 5px;
 
     .brand-logos-content-container {
@@ -48,7 +48,7 @@
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1150px) {
   .brand-logos-container {
     width: 100%;
   }

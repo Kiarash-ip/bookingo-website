@@ -6,7 +6,7 @@
 }
 
 .intro-section-container {
-  max-width: 1240px;
+  max-width: 1150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,8 +15,8 @@
 }
 
 .intro-section-visual-part {
-  width: 640px;
-  padding: 0 1.2rem;
+  width: 600px;
+  padding-right: 1.2rem;
 
   img {
     width: 100%;
@@ -25,10 +25,10 @@
 
 .intro-section-content {
   display: flex;
-  padding: 0 1.2rem;
+  padding-left: 1.2rem;
   row-gap: 2rem;
   flex-direction: column;
-  width: 600px;
+  width: 60%;
 
   h1 {
     font-size: 4.5rem;
@@ -83,7 +83,7 @@
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1150px) {
   .intro-section-container {
     width: 100%;
   }
@@ -91,13 +91,9 @@
   .intro-section-visual-part {
     margin-right: -10%;
   }
-
-  .intro-section-content {
-    width: 60%;
-  }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1060px) {
   .intro-section-container {
     flex-direction: column;
   }
