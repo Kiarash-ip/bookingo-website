@@ -1,10 +1,10 @@
-.section-present {
+.section-rightSide {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 10rem 0;
+  padding: 7rem 0;
 
-  .present-container {
+  .section-rightSide-container {
     max-width: 1150px;
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@
       padding: 0 1.6rem;
     }
 
-    .present-image-container {
+    .section-rightSide-image-container {
       width: 600px;
       display: flex;
       justify-content: center;
@@ -39,7 +39,7 @@
       }
     }
 
-    .present-content {
+    .section-rightSide-content {
       width: 40%;
       padding: 0 1.2rem;
       justify-self: stretch;
@@ -67,7 +67,7 @@
         }
       }
 
-      .present-link-container {
+      .section-rightSide-link-container {
         margin-top: 3.2rem;
         display: flex;
         align-items: center;
@@ -79,7 +79,7 @@
         }
 
         i {
-          margin-left: 0.5rem;
+          margin-right: 0.5rem;
           transition: transform 0.2s;
         }
 
@@ -88,7 +88,7 @@
         }
 
         &:hover i {
-          transform: translateX(10px);
+          transform: translateX(-10px);
         }
       }
     }

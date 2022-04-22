@@ -44,7 +44,7 @@
   &__container {
     display: flex;
     padding: 1.5rem 0;
-    // justify-content: space-between;
+    justify-content: space-between;
     width: 1150px;
     align-items: center;
 
@@ -56,8 +56,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-left: auto;
-      // padding-left: 30px;
     }
 
     .buttons__container {
@@ -126,22 +124,17 @@
     }
 
     &-item {
+      color: $dark-color;
       font-family: "vazir";
       font-size: 1.6rem;
       padding: 8px 16px;
       text-decoration: none;
       cursor: pointer;
+
+      &:hover {
+        color: darken($dark-color, 20%);
+      }
     }
-  }
-}
-
-@keyframes upToDown {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(100%);
   }
 }
 

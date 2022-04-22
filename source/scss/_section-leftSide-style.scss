@@ -1,37 +1,31 @@
-.section-present {
+.section-leftSide {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 10rem 0;
+  padding: 7rem 0;
 
-  .present-container {
+  .section-leftSide-container {
     max-width: 1150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2.4rem;
 
-    @media only screen and (max-width: 1150px) {
-      width: 100%;
-    }
-
     @media only screen and (max-width: 768px) {
-      flex-direction: column;
       padding: 0 1.6rem;
     }
 
-    .present-image-container {
-      width: 600px;
-      display: flex;
-      justify-content: center;
-      padding: 0 1.2rem;
+    .section-leftSide-image-container {
+      width: 596px;
+      padding: 0 2.4rem 0 1.2rem;
 
       @media only screen and (max-width: 1060px) {
-        margin-right: -22%;
+        width: 780px;
       }
+
       @media only screen and (max-width: 768px) {
+        padding: 0 1.2rem;
         width: 100%;
-        margin: 0;
       }
 
       img {
@@ -39,10 +33,14 @@
       }
     }
 
-    .present-content {
-      width: 40%;
-      padding: 0 1.2rem;
+    .section-leftSide-content {
+      width: 35%;
       justify-self: stretch;
+      padding: 0 1.2rem;
+
+      @media only screen and (max-width: 1150px) {
+        width: 40%;
+      }
 
       @media only screen and (max-width: 1060px) {
         width: 50%;
@@ -57,7 +55,7 @@
       }
 
       p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         color: $dark-color;
         margin-top: 1.6rem;
         line-height: 3rem;
@@ -67,19 +65,19 @@
         }
       }
 
-      .present-link-container {
+      .section-leftSide-link-container {
         margin-top: 3.2rem;
         display: flex;
         align-items: center;
         color: #0085e4;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         a {
           all: unset;
           cursor: pointer;
         }
 
         i {
-          margin-left: 0.5rem;
+          margin-right: 0.5rem;
           transition: transform 0.2s;
         }
 
@@ -88,9 +86,38 @@
         }
 
         &:hover i {
-          transform: translateX(10px);
+          transform: translateX(-10px);
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .section-leftSide-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .section-leftSide-image-container {
+    margin-left: -40%;
+    width: 780px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-leftSide-container {
+    flex-direction: column;
+  }
+
+  .section-leftSide-content {
+    width: 100%;
+  }
+
+  .section-leftSide-image-container {
+    width: 100%;
+    margin: 3rem 0 0;
+    order: 2;
   }
 }
